@@ -28,10 +28,16 @@ def calc_min_max_temperature(num):
     print("The largest value is " + str(smallest))
     print("The smallest value is " + str(largest))
 
+def calc_median_temperature(num):
+
+    print("The median value is " + str(statistics.median(num)))
+
+
 def main():
     num_list=get_user_input()
     calc_average_temperature(num_list)
     calc_min_max_temperature(num_list)
+    calc_median_temperature(num_list)
 
 
 if __name__ == "__main__":
